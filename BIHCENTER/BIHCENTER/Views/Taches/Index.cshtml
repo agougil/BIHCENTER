@@ -1,0 +1,63 @@
+﻿@model IEnumerable<BIHCENTER.Tache>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Projet.NomProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomTache)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.priorite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.avancement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Projet.NomProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomTache)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.priorite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.avancement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idTache }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idTache }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idTache })
+        </td>
+    </tr>
+}
+
+</table>

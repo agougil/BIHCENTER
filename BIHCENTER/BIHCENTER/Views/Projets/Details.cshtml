@@ -1,0 +1,58 @@
+﻿@model BIHCENTER.Projet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Projet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Admin.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admin.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDepart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDepart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomChefProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomChefProjet)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idProjet }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

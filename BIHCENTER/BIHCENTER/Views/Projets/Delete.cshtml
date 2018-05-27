@@ -1,0 +1,64 @@
+﻿@model BIHCENTER.Projet
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Projet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Admin.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admin.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDepart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDepart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomChefProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomChefProjet)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
