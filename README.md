@@ -339,7 +339,6 @@
         <td align="center">  
             4
         </td>
-	   
          <td>           
                  En tant qu’utilisateur, je souhaite Entrer les informations des personnes qui travailleront en collaboration avec        moi.
         </td>
