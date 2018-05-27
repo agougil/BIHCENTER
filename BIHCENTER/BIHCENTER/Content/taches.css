@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.left {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    float: right;
+    margin-right: 550px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4169E1;
+}
+
+.th {
+    background-color: #AFEEEE;
+}
+
+.td1 {
+    color: #4682B4;
+}
+
+.td2 {
+    font-weight: bold;
+}

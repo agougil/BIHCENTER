@@ -1,63 +1,78 @@
 ﻿@model IEnumerable<BIHCENTER.Tache>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Taches";
 }
 
-<h2>Index</h2>
+<div class="center">
+    <h2>Taches</h2>
+</div>
+<br /><br /><br /><br />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<div class="left">
+    <a href="@Url.Action("Create", "Taches")">
+        <img src="@Url.Content("~/Assets/add_fil.png")" alt="ajouter" width="50"  />
+    </a>
+</div>
+<br /><br />
+
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Projet.NomProjet)
+    <tr class="th">
+        <th class="td2">
+            Nom projet
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.nomTache)
+        <th class="td2">
+            Nom tache
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.priorite)
+        <th class="td2">
+            Priorite
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.cout)
+        <th class="td2">
+            cout
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.avancement)
+        <th class="td2">
+            avancement
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.description)
+        <th class="td2">
+            description
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Projet.NomProjet)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nomTache)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.priorite)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.cout)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.avancement)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.description)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idTache }) |
-            @Html.ActionLink("Details", "Details", new { id=item.idTache }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idTache })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="td2">
+                @Html.DisplayFor(modelItem => item.Projet.NomProjet)
+            </td>
+            <td class="td1">
+                @Html.ActionLink(item.nomTache, "Details", new { id = item.idTache })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priorite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cout)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.avancement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                <a href="@Url.Action("Edit", new { id = item.idTache })">
+                    <img src="@Url.Content("~/Assets/edit_fil.png")" alt="modifier" width="28" />
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="@Url.Action("Delete", new { id = item.idTache })">
+                    <img src="@Url.Content("~/Assets/delete_fil.png")" alt="supprimer" width="25" />
+                </a>
+            </td>
+        </tr>
+    }
 
 </table>
+
+<link rel="stylesheet" href="~/Content/taches.css" />
