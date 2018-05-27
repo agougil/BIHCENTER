@@ -266,10 +266,10 @@
 <h3 style="color:red;text-align:center;margin-bottom:70px;">Personne en charge des taches de SPRINT1 </h3>
 <table width="800px" cellspacing="0" cellpadding="0">
     <tr bgcolor="#00FF00">
-      <th>Sprint 1</th>
-      <th>Sprint 2</th>
-      <th>Sprint 3</th>
-      <th>Sprint 4 </th>
+      <th>tache 1</th>
+      <th>tache 2</th>
+      <th>tache 3</th>
+      <th>tache 4 </th>
     </tr>
     <tr>
          <td > Omaima LAAOUINA </td>
