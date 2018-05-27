@@ -261,3 +261,23 @@
 </div>
 
 
+<div style="margin: 100px auto;" >
+
+<h3 style="color:red;text-align:center;margin-bottom:70px;">Personne en charge des taches de SPRINT1 </h3>
+<table width="800px" cellspacing="0" cellpadding="0">
+    <tr bgcolor="#00FF00">
+      <th>Sprint 1</th>
+      <th>Sprint 2</th>
+      <th>Sprint 3</th>
+      <th>Sprint 4 </th>
+    </tr>
+    <tr>
+         <td > Omaima LAAOUINA </td>
+         <td>BIQ khalid</td>
+         <td> Zineb AGOUGIL </td>
+         <td>
+             BAHMAD AYOUB 
+          </td>
+    </tr>
+</table>
+</div>
