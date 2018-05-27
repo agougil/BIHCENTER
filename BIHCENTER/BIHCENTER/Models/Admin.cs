@@ -15,7 +15,6 @@ namespace BIHCENTER
             Projets = new HashSet<Projet>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }
 
         [StringLength(100)]

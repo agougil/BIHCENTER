@@ -1,0 +1,26 @@
+﻿@model BIHCENTER.Membre
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Membre</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomMembre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomMembre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idMembre }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

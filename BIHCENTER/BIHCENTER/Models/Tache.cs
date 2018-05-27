@@ -10,7 +10,6 @@ namespace BIHCENTER
     public partial class Tache
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int idTache { get; set; }
 
         [StringLength(100)]

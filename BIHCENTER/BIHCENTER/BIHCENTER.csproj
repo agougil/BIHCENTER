@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AdminsController.cs" />
+    <Compile Include="Controllers\MembresController.cs" />
     <Compile Include="Controllers\ProjetsController.cs" />
     <Compile Include="Controllers\TachesController.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Membre.cs" />
     <Compile Include="Models\Projet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Tache.cs" />
@@ -137,22 +139,27 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Admins\Create.cshtml" />
     <Content Include="Views\Admins\Delete.cshtml" />
     <Content Include="Views\Admins\Details.cshtml" />
     <Content Include="Views\Admins\Edit.cshtml" />
     <Content Include="Views\Admins\Index.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Projets\Create.cshtml" />
-    <Content Include="Views\Projets\Delete.cshtml" />
-    <Content Include="Views\Projets\Details.cshtml" />
-    <Content Include="Views\Projets\Edit.cshtml" />
-    <Content Include="Views\Projets\Index.cshtml" />
+    <Content Include="Views\Membres\Create.cshtml" />
+    <Content Include="Views\Membres\Delete.cshtml" />
+    <Content Include="Views\Membres\Details.cshtml" />
+    <Content Include="Views\Membres\Edit.cshtml" />
+    <Content Include="Views\Membres\Index.cshtml" />
     <Content Include="Views\Taches\Create.cshtml" />
     <Content Include="Views\Taches\Delete.cshtml" />
     <Content Include="Views\Taches\Details.cshtml" />
     <Content Include="Views\Taches\Edit.cshtml" />
     <Content Include="Views\Taches\Index.cshtml" />
+    <Content Include="Views\Projets\Create.cshtml" />
+    <Content Include="Views\Projets\Delete.cshtml" />
+    <Content Include="Views\Projets\Details.cshtml" />
+    <Content Include="Views\Projets\Edit.cshtml" />
+    <Content Include="Views\Projets\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

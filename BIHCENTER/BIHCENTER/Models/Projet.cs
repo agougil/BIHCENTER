@@ -16,7 +16,6 @@ namespace BIHCENTER
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int idProjet { get; set; }
 
         [StringLength(100)]
