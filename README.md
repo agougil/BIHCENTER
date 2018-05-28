@@ -1,4 +1,3 @@
-<h1 style="color:red;text-align:center;">SPRINT1 </h1>
 ![userstories](https://user-images.githubusercontent.com/32837077/40595760-340a68be-6226-11e8-96e1-2e1e8ce46715.PNG)
 
 
