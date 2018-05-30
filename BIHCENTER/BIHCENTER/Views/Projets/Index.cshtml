@@ -1,4 +1,4 @@
-@model PagedList.IPagedList<Application_Sprint.Models.Projet>
+@model PagedList.IPagedList<BIHCENTER.Projet>
 @using PagedList.Mvc;
 
 <link href="~/Content/PagedList.css" rel="stylesheet" />
@@ -40,7 +40,7 @@
         </div>
 
 
-        using (Html.BeginForm("Edit", "Projetx"))
+        using (Html.BeginForm("Edit", "Projet"))
         {
             @Html.AntiForgeryToken()
             <!-- The Modal -->
